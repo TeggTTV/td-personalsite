@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+
+    <title>TeggunDrut</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>              
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyCSymxynuOcujl43HStJ9bnzPejS-J2YNU",
+        authDomain: "td-personalsite.firebaseapp.com",
+        projectId: "td-personalsite",
+        storageBucket: "td-personalsite.appspot.com",
+        messagingSenderId: "641332926205",
+        appId: "1:641332926205:web:5209c366b051e84e2e1094",
+        measurementId: "G-R35T57FH3T",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
